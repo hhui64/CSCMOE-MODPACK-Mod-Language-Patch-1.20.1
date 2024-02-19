@@ -275,7 +275,7 @@
   "ars_nouveau.glyph_desc.glyph_wall": "创造一堵会对靠近的实体释放法术的短时间滞留的墙。添加敏感强化会使这堵墙的目标变为方块而非实体。范围升级强化会扩大释放法术的范围，加速会让法术释放的频率加快，抑制会让墙无视重力，而延长时间会增加墙的滞留时间。",
   "ars_nouveau.glyph_desc.glyph_wind_shear": "对空中的目标造成伤害，目标离地面越高，伤害越高，超过10格后伤害不再提升。目标位于地面时不会造成伤害。",
   "ars_nouveau.glyph_desc.glyph_wither": "造成凋零状态。",
-  "ars_nouveau.glyph_desc.reset": "如果法术链的目标因前面的效果而改变，则将法术链的目标重置为原始目标。例如，爆发 -> 放置方块 -> 重置 -> 破坏 的效果为爆发然后放置方块，但是只有原始目标的方块被破坏。因此，使用重置将允许你绕过魔符的组合和重复限制。",
+  "ars_nouveau.glyph_desc.reset": "如果法术链的目标因前面的效果而改变，则将法术链的目标重置为原始目标。例如，爆发 -> 放置方块 -> 重置 -> 破坏 的效果为爆发然后放置方块，接着破坏掉原始目标的方块（如果没有重置则目标会因为爆发而改变）。因此，使用重置将允许你绕过魔符的组合和重复限制。",
   "ars_nouveau.glyph_name.burst": "爆发",
   "ars_nouveau.glyph_name.glyph_accelerate": "加速",
   "ars_nouveau.glyph_name.glyph_amplify": "强化",
