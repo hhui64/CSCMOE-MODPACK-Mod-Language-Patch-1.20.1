@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/hhui64/CSCMOE-MODPACK-Mod-Language-Patch-1.20.1/issues"
   },
-  "homepage": "https://github.com/hhui64/CSCMOE-MODPACK-Mod-Language-Patch-1.20.1#readme"
+  "homepage": "https://github.com/hhui64/CSCMOE-MODPACK-Mod-Language-Patch-1.20.1#readme",
+  "dependencies": {
+    "archiver": "^6.0.1"
+  }
 }
