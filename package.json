@@ -1,0 +1,19 @@
+{
+  "name": "cscmoe-modpack-mod-language-patch-1.20.1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hhui64/CSCMOE-MODPACK-Mod-Language-Patch-1.20.1.git"
+  },
+  "author": "hhui64",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hhui64/CSCMOE-MODPACK-Mod-Language-Patch-1.20.1/issues"
+  },
+  "homepage": "https://github.com/hhui64/CSCMOE-MODPACK-Mod-Language-Patch-1.20.1#readme"
+}
