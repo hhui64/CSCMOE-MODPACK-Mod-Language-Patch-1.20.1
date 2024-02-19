@@ -1,4 +1,4 @@
 {
-  "create.tooltip.capacityProvided": "应力量：%1$s",
-  "create.tooltip.stressImpact": "应力影响：%1$s"
+  "create.tooltip.capacityProvided": "应力量：",
+  "create.tooltip.stressImpact": "应力影响："
 }
