@@ -20,6 +20,7 @@ concurrency:
 jobs:
   # 打包工作
   pack:
+    name: Pack
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -40,8 +41,8 @@ jobs:
   # 上传工作
   upload:
     needs: pack
-    runs-on: ubuntu-latest
     name: Upload
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: hujiulong/action-qiniu-upload@master
