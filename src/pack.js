@@ -1,6 +1,8 @@
 const fs = require('node:fs')
-const path = require('path')
+const path = require('node:path')
 const archiver = require('archiver')
+const crypto = require('node:crypto')
+const fse = require('fs-extra')
 
 const sourceDir = 'pack'
 const outDir = 'dist'
@@ -8,10 +10,10 @@ const outFileName = 'CSCMOE-MODPACK-Mod-Language-Patch-1.20.1'
 
 const outDirPath = path.resolve(__dirname, '../', outDir)
 const outFilePath = path.join(outDirPath, `${outFileName}.zip`)
+const hashFilePath = path.join(outDirPath, 'hash.txt')
 
-if (!fs.existsSync(outDirPath)) {
-  fs.mkdirSync(outDirPath)
-}
+// 在初始时清空dist目录下的所有内容
+fse.emptyDirSync(outDirPath)
 
 const output = fs.createWriteStream(outFilePath)
 
@@ -47,11 +49,16 @@ archive.on('error', (err) => {
 output.on('close', () => {
   const fileSizeInBytes = output.bytesWritten
   const fileSizeInKB = fileSizeInBytes / 1024
-  const fileSizeInMB = fileSizeInKB / 1024
+
+  // 读取文件内容并计算SHA-1值
+  const fileContent = fs.readFileSync(outFilePath)
+  const sha1Hash = crypto.createHash('sha1').update(fileContent).digest('hex')
+
+  // 输出SHA-1值到hash.txt文件
+  fs.writeFileSync(hashFilePath, sha1Hash)
 
   console.log('打包完成！')
   console.log('输出至:', outFilePath)
-  console.log('文件大小 (Bytes):', fileSizeInBytes, 'bytes')
-  console.log('文件大小 (KB):', fileSizeInKB.toFixed(2), 'KB')
-  console.log('文件大小 (MB):', fileSizeInMB.toFixed(2), 'MB')
+  console.log('文件大小:', fileSizeInBytes, 'B', fileSizeInKB.toFixed(2), 'KB')
+  console.log('SHA1:', sha1Hash)
 })
