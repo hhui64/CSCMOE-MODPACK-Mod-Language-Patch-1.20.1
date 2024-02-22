@@ -37,6 +37,11 @@ jobs:
       - name: Pack
         run: |
           npm run pack
+      - name: Upload artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: dist
+          path: dist
 
   # 上传工作
   upload:
