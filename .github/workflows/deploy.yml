@@ -58,11 +58,12 @@ jobs:
           path: .
 
       - name: Upload to qiniu
-        uses: hujiulong/action-qiniu-upload@master
+        uses: hocgin/action-qiniu-upload@master
         with:
           access_key: ${{ secrets.QINIU_ACCESS_KEY }}
           secret_key: ${{ secrets.QINIU_SECRET_KEY }}
           bucket: ${{ secrets.QINIU_BUCKET }}
           source_dir: 'dist'
           dest_dir: '/resourcepacks'
+          overwrite: true
           ignore_source_map: true
