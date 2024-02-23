@@ -3,13 +3,16 @@ const path = require('node:path')
 const archiver = require('archiver')
 const crypto = require('node:crypto')
 const fse = require('fs-extra')
+const api = require('./api')
 
 const sourceDir = 'pack'
 const outDir = 'dist'
 const outFileName = 'CSCMOE-MODPACK-Mod-Language-Patch-1.20.1'
+const resourcepackName = `${outFileName}.zip`
 
 const outDirPath = path.resolve(__dirname, '../', outDir)
-const outFilePath = path.join(outDirPath, `${outFileName}.zip`)
+const outFilePath = path.join(outDirPath, resourcepackName)
+const manifestFilePath = path.join(outDirPath, 'manifest.json')
 const hashFilePath = path.join(outDirPath, 'hash.txt')
 
 // 在初始时清空dist目录下的所有内容
@@ -47,18 +50,21 @@ archive.on('error', (err) => {
 })
 
 output.on('close', () => {
-  const fileSizeInBytes = output.bytesWritten
-  const fileSizeInKB = fileSizeInBytes / 1024
-
-  // 读取文件内容并计算SHA-1值
   const fileContent = fs.readFileSync(outFilePath)
-  const sha1Hash = crypto.createHash('sha1').update(fileContent).digest('hex')
 
-  // 输出SHA-1值到hash.txt文件
-  fs.writeFileSync(hashFilePath, sha1Hash)
+  const manifest = api.generateManifest(fileContent, resourcepackName)
 
   console.log('打包完成！')
   console.log('输出至:', outFilePath)
-  console.log('文件大小:', fileSizeInBytes, 'B', fileSizeInKB.toFixed(2), 'KB')
-  console.log('SHA1:', sha1Hash)
+  console.log(
+    '文件大小:',
+    manifest.fileSize,
+    'B',
+    (manifest.fileSize / 1024).toFixed(2),
+    'KB'
+  )
+  console.log('SHA1:', manifest.hash.sha1)
+
+  fs.writeFileSync(manifestFilePath, JSON.stringify(manifest, undefined, 2))
+  fs.writeFileSync(hashFilePath, manifest.hash.sha1)
 })
