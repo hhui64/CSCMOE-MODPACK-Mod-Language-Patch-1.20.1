@@ -414,7 +414,7 @@
 	"gui.supplementaries.optifine.message": "在继续之前，请注意已有实证表明Optifine会导致问题乃至崩溃。\n\n该模组不适合与其他模组一起使用，与Forge本身的兼容性也较差。\n\n此外，还有其他效果更好的性能提升模组可供使用，例如Modern fix、Embeddium，以及Oculus。\n\n不论是游玩模组或是游玩原版，你都应该选用下方列出的模组。",
 	"gui.supplementaries.optifine.suggestions": "我们推荐使用的若干模组如下。",
 	"gui.supplementaries.optifine.title": "警告，检测到OPTIFINE",
-	"gui.supplementaries.amendments.message": "从 2.8.0 版本更新开始，锦致装饰的一些功能已被移至一个专用的模组 Amendments。\n\n这些模组本应独立运行，但如果您希望保留所有已存在的旧方块，您必须安装 Amendments。\n\n移动的功能包括：WALL LANTERNS（墙上的灯笼），SKULL CANDLES（头颅烛台），CEILING POTS（天花壶），CEILING BANNERS（天花旗帜）和SKULL PILES（头颅堆）。\n\n请注意，如果您选择不安装它，所有这些已存在的方块将会丢失。",
+	"gui.supplementaries.amendments.message": "从 2.8.0 版本更新开始，锦致装饰的一些功能已被移至一个专用的模组 Amendments。\n\n这些模组本应独立运行，但如果您希望保留所有已存在的旧方块，您必须安装 Amendments。\n\n移动的功能包括：WALL LANTERNS（墙上的灯笼），SKULL CANDLES（头颅烛台），CEILING POTS（锅），CEILING BANNERS（旗帜）和SKULL PILES（头颅堆）。\n\n请注意，如果您选择不安装它，所有这些已存在的方块将会丢失。",
 	"gui.supplementaries.amendments.suggestions": "你可以从这里获取模组",
 	"gui.supplementaries.amendments.title": "警告：Amendments 未安装",
 	"gui.supplementaries.welcome_screen.turn_off": "不再显示",
