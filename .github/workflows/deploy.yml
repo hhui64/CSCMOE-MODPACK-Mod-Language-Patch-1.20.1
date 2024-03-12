@@ -45,8 +45,8 @@ jobs:
 
   # 上传工作
   upload:
-    needs: pack
     name: Upload
+    needs: pack
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
