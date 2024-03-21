@@ -120,3 +120,4 @@ target/
 test.js
 .backup
 .eslintcache
+sourcemods/**/*.jar
