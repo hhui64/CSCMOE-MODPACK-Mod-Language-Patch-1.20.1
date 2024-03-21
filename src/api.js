@@ -1,4 +1,7 @@
 const crypto = require('node:crypto')
+const path = require('node:path')
+
+const rootDir = path.resolve(__dirname, '..', '..')
 
 const generateManifest = (buffer, fileName = '') => {
   const bf = Buffer.from(buffer)
@@ -17,5 +20,6 @@ const generateManifest = (buffer, fileName = '') => {
 }
 
 module.exports = {
-  generateManifest
+  generateManifest,
+  rootDir
 }

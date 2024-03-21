@@ -5,7 +5,8 @@
   "main": "src/index.js",
   "scripts": {
     "pack": "node src/pack.js",
-    "dev": "node src/dev.js"
+    "dev": "node src/dev.js",
+    "diff": "node src/langtools/diff.js"
   },
   "repository": {
     "type": "git",
