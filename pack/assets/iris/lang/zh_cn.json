@@ -1,0 +1,4 @@
+{
+  "options.iris.colorSpace": "色彩空间",
+  "options.iris.colorSpace.sodium_tooltip": "将色彩转换至要显示的色彩空间。在光影包之后进行色彩空间转换工作。"
+}
