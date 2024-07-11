@@ -1,0 +1,4 @@
+{
+  "sodium.options.use_no_error_context.name": "使用无错误上下文",
+  "sodium.options.use_no_error_context.tooltip": "如果启用，OpenGL 在创建上下文时将不会进行错误检查。这可能会略微提高性能，但也增加了游戏崩溃的风险，而不会捕获处理 OpenGL 错误。如果您遇到了莫名其妙的崩溃，则应禁用此选项。"
+}
