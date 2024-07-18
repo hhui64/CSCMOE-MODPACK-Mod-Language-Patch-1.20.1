@@ -3,7 +3,7 @@
 
   "key.travelersbackpack.category": "旅行者背包",
   "key.travelersbackpack.inventory": "打开背包界面",
-  "key.travelersbackpack.sort": "背包排序",
+  "key.travelersbackpack.sort": "整理背包",
   "key.travelersbackpack.ability": "启用/禁用特殊能力",
   "key.travelersbackpack.cycle_tool": "切换工具或软管模式",
   "key.travelersbackpack.toggle_tank": "切换软管储罐",
@@ -12,10 +12,10 @@
   "action.travelersbackpack.unequip_nospace": "背包空间有限，无法存放另一个背包。",
   "action.travelersbackpack.equip_otherbackpack": "已装备了其他背包。",
   "action.travelersbackpack.equip_fail": "无法装备此背包。",
-  "action.travelersbackpack.deploy_sleeping_bag": "无法铺展睡袋！请确认附近有足够的空间。",
+  "action.travelersbackpack.deploy_sleeping_bag": "无法铺展睡袋！请确保周围有足够的空间。",
 
   "information.travelersbackpack.backpack_coords": "你的背包已放置于 X: %s Y: %s Z: %s",
-  "information.travelersbackpack.backpack_drop": "周围没有空间放置背包。背包以物品形式掉落于 X: %s Y: %s Z: %s。",
+  "information.travelersbackpack.backpack_drop": "周围没有空间放置背包。背包已以物品形式掉落于 X: %s Y: %s Z: %s。",
 
   "screen.travelersbackpack.none": "无",
   "screen.travelersbackpack.empty": "空",
