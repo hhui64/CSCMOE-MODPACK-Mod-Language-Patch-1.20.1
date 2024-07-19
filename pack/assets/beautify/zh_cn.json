@@ -2,7 +2,7 @@
   "itemGroup.beautify": "美化！",
 
   "tooltip.shift": "按住SHIFT显示更多信息",
-  "tooltip.control": "按住CTRL可查看植物列表",
+  "tooltip.control": "按住CTRL查看可栽种的植物",
 
   "block.beautify.rope": "吊篮绳索",
   "rope.description1": "可像链条一样放置并可攀爬。",
