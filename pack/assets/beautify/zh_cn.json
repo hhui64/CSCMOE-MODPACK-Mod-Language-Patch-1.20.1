@@ -10,8 +10,8 @@
 
   "block.beautify.hanging_pot": "吊篮盆",
   "hanging_pot.description1": "可以像平常一样悬挂在吊篮绳索、方块或放置在地面上。",
-  "hanging_pot.description2": "手持植物右键单击以栽种。",
-  "hanging_pot.description3": "手持骨粉右键单击可促进植物生长。用剪刀修剪可将植物收短并获得植物。",
+  "hanging_pot.description2": "使用植物右键单击以栽种。",
+  "hanging_pot.description3": "使用骨粉右键单击可使植物生长得更茂盛。使用剪刀可修剪植物并掉落该植物的物品。",
   "hanging_pot.list1": "可栽种植物：",
   "hanging_pot.list2": "所有普通的花 + 玫瑰丛、丁香、牡丹、向日葵、藤蔓、垂泪藤、缠怨藤、发光的地衣、发光的浆果、甜浆果、草、蕨类植物",
 
