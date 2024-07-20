@@ -436,6 +436,7 @@
   "ftbquests.reward.ftbquests.xp": "经验",
   "ftbquests.reward.ftbquests.xp_levels": "经验等级",
   "ftbquests.reward.ftbquests.command": "命令",
+  "ftbquests.reward.ftbquests.command.tooltip": "支持原版替换，例如 @p\n特殊替换：\n{x} / {y} / {z} - 玩家的当前 X/Y/Z 坐标\n{quest} - 此任务的ID\n{chapter} - 此章节的ID\n{team} - 玩家团队的简名",
   "ftbquests.reward.ftbquests.command.elevate": "以提升的权限运行",
   "ftbquests.reward.ftbquests.command.elevate.tooltip": "以玩家拥有2级权限的方式运行命令",
   "ftbquests.reward.ftbquests.command.silent": "静默（无提示）执行",
