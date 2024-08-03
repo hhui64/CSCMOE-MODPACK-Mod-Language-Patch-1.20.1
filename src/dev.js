@@ -3,7 +3,7 @@ const chokidar = require('chokidar')
 
 const sourceDir = 'pack' // 源文件夹路径
 const destinationDir =
-  'C:/Users/90732/Desktop/mc/.minecraft/versions/CSCMOE MODPACK/resourcepacks/pack' // 目标文件夹路径
+  'C:/Users/90732/Desktop/mc/.minecraft/versions/CSCMOE MODPACK/config/paxi/resourcepacks/.devpack' // 目标文件夹路径
 
 // 启动时拷贝 pack 文件夹至指定文件夹
 async function copyDirectory() {
